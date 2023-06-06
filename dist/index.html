@@ -11,27 +11,27 @@
 </head>
 <body>
     <!--  -->
-    <nav class="nav_area bg-green-900 w-full flex justify-between items-center text-white py-4 px-8">
-        <div class="nav_logo font-bold text-2xl flex justify-start items-center">
-            <h2>LOGO</h2>
+    <nav class="nav_area bg-white w-full flex justify-between items-center text-white py-6 px-8 drop-shadow-md">
+        <div class="nav_logo font-bold text-2xl flex justify-start items-center text-red-300">
+            <h2>Razel</h2>
         </div>
         
-        <div class="nav_for_sm_screen ">
-            <div class="">
-                <ul class="nav_links justify-center sm:hidden md:hidden lg:flex">
-                    <li class="mx-2"><a href="#">Home</a></li>
-                    <li class="mx-2"><a href="#">About</a></li>
-                    <li class="mx-2"><a href="#">Works</a></li>
-                    <li class="mx-2"><a href="#">Contact</a></li>
+        <div class="nav_for_sm_screen">
+            <div class="main_menu text-black">
+                <ul class="nav_links hidden lg:flex justify-center font-bold">
+                    <li class="mx-2"><a href="#home">Home</a></li>
+                    <li class="mx-2"><a href="#about">About</a></li>
+                    <li class="mx-2"><a href="#works">Works</a></li>
+                    <li class="mx-2"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="ham_menu lg:hidden md:block">
+            <div class="ham_menu lg:hidden md:block text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 cursor-pointer" id="click_burger">
                     <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
                 </svg>
             </div>
             
-            <ul class="fixed bg-black w-full h-screen left-0 flex-col z-5 text-center hide_box open ">
+            <ul class="fixed bg-black w-full h-screen left-0 top-0 flex-col z-5 text-center hide_box">
                 <div class="close_small_menu absolute top-20 right-20 text-27 ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />

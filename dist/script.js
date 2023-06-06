@@ -2,6 +2,7 @@
 const hamMenu = document.querySelector('.ham_menu');
 const hideBox = document.querySelector('.hide_box');
 const closeMenu = document.querySelector('.close_small_menu');
+const nav_links = document.querySelector('.hide_box');
 
 // Add event listener to the ham_menu
 hamMenu.addEventListener('click', () => {
@@ -14,3 +15,8 @@ closeMenu.addEventListener('click', () => {
   // Remove the 'open' class from hide_box
   hideBox.classList.remove('open');
 });
+
+nav_links.addEventListener('click', () => {
+    // Remove the 'open' class from hide_box
+  hideBox.classList.remove('open');
+})
