@@ -1,12 +1,15 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components {
 
     /* group utilities */
-
-    .btn {
+    /* .btn {
         @apply px-4 py-1 border rounded-full text-sm hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 dark:text-gray-300
     }
 
@@ -16,21 +19,37 @@
 
     .btn-red {
         @apply  border-red-300 hover:bg-red-500 focus:ring-red-600 
-    }
+    } */
 
 }
 
 
 @layer base {
-    h1 {
+    /* h1 {
         @apply text-2xl
-    }
+    } */
 }
 
 @layer utilities {
-    .text-body {
-        font-size: 8px;
+    .hide_box {
+        display: none;
     }
+    .hide_box {
+        /* styles for hidden state */
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .hide_box.open {
+        /* styles for visible state */
+        display: block;
+        opacity: 1;
+      }
+      .hide_box.close {
+        /* styles for visible state */
+        display: none;
+      }
 }
 
 
